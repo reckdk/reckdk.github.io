@@ -23,12 +23,14 @@
 // redefining default features
 var _POPUP_FEATURES = 'width=500,height=300,resizable=1,scrollbars=1,titlebar=1,status=1';
 </script>
+
+
 <link media="all" href="glab.css" type="text/css" rel="StyleSheet">
 <style type="text/css" media="all">
 IMG {
 	PADDING-RIGHT: 0px;
 	PADDING-LEFT: 0px;
-	FLOAT: right;
+	FLOAT: middle;
 	PADDING-BOTTOM: 0px;
 	PADDING-TOP: 0px
 }
@@ -39,63 +41,56 @@ IMG {
 BODY {
 	TEXT-ALIGN: center
 }
+h1 { color: #222; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; }
+h2 { color: #222; font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; margin: 0 0 24px; }
+.subheader { font-size: 26px; font-weight: 300; color: #ffcc66; margin: 0 0 24px; }
+p { color: #222; font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0 0 14px; }
+a { background: #fff; color: #93291b; text-decoration: none; font-weight:bold}
+a:hover { background: #7c795d; color: #eee; text-decoration: none; }
+
 </style>
+<!--
+color: #ff6600 oringe
+color: #06F zhuhong
+-->
+
 
 <meta content="MSHTML 6.00.2800.1400" name="GENERATOR"><script src="b5m.js" id="b5mmain" type="text/javascript"></script></head>
 
 <body>
-
+<br />
+<br />
 <div id="primarycontent">
 <h1 align="center">A Novel and Robust Face Clustering Method via Adaptive Difference Dictionary</h1>
-<h2 align="center">
+<h2 align="center" style="color: #7c795d; font-weight:bold">
   <a href="https://reckdk.github.io">Jiaxiang Ren</a><sup>1</sup>&nbsp;&nbsp;
   Shengjie Zhao<sup>1</sup>&nbsp;&nbsp;
   Kai Yang<sup>1</sup>&nbsp;&nbsp;
-  Brian Zhao<sup>2</sup>
-
+  Brian Zhao<sup>2</sup></h2>
 <h2 align="center"><sup>1</sup>Tongji University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>SHSID</h2>
-
-<h2 align="center"><strong><a href="./papers/ICME17/ESSC-ICMEW17.pdf">[Paper]</a>
-<a href="./papers/ICME17/Report_ESSC.pdf">[Slides]</a></p>
-</strong> </h2>
-<h2 align="center"><img style="PADDING-LEFT: 110px; PADDING-RIGHT: 110px;" src="./papers/ICME17/illu.jpg" width="720"> </a><br /></h2>
-
-<h2>Abstract</h2>
-<div style="font-size:14px"><p>High-dimensional data are ubiquitous in most real-world research areas, such as machine learning, image processing and so on. Actually, high-dimensional data that belong to the same classes tend to gather in their own low-dimensional subspaces. Recently, many subspace recovery algorithms based on the sparse representation such as Sparse Subspace Clustering (SSC), Low-Rank Representation (LRR) and their variants are proposed to address the subspace clustering problems.<br />
-In this paper, we propose a novel clustering method based on SSC, called Enhanced Sparse Subspace Clustering (ESSC), to deal with complicated face images under variant expressions, illuminations or disguises. Assuming that the variant expressions or disguises of the face images are sharable, we introduce the adaptive difference dictionary to extend the simple linear combination of face images in SSC with the combination of the specific features and the common features. Thus both of the accuracy and generalization of clustering are improved simultaneously.The experimental results on the AR face databases show that the proposed ESSC not only makes up to 9.0% improvements on accuracy compared with SSC, but also is more robust and scalable for dealing with larger face clustering problems (up to 400 samples from 100 subjects) under variant expressions, disguises or illuminations.</p></div>
-
-<h1 align='center'>Geometric Interpretation</h1>
-<table align="center" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-    <td align="center" valign="middle">
-    <p><img src="./papers/ICME17/geom.png"></p>
-   </td>
-    </tr>
-</table>
+<h2 align="center"><a href="./papers/ICME17/ESSC-ICMEW17.pdf">[Paper]</a>
+<a href="./papers/ICME17/Report_ESSC.pdf">[Slides]</a> </h2>
+<br />
+<h2 align="center"><img style="PADDING-LEFT: 110px; PADDING-RIGHT: 110px;" src="./papers/ICME17/illu.jpg" width="512px"><br /></h2>
+<h2 align="left">Abstract</h2><p>
+High-dimensional data are ubiquitous in most real-world research areas, such as machine learning, image processing and so on. Actually, high-dimensional data that belong to the same classes tend to gather in their own low-dimensional subspaces. Recently, many subspace recovery algorithms based on the sparse representation such as Sparse Subspace Clustering (SSC), Low-Rank Representation (LRR) and their variants are proposed to address the subspace clustering problems.<br />
+In this paper, we propose a novel clustering method based on SSC, called Enhanced Sparse Subspace Clustering (ESSC), to deal with complicated face images under variant expressions, illuminations or disguises. Assuming that the variant expressions or disguises of the face images are sharable, we introduce the adaptive difference dictionary to extend the simple linear combination of face images in SSC with the combination of the specific features and the common features. Thus both of the accuracy and generalization of clustering are improved simultaneously.The experimental results on the AR face databases show that the proposed ESSC not only makes up to 9.0% improvements on accuracy compared with SSC, but also is more robust and scalable for dealing with larger face clustering problems (up to 400 samples from 100 subjects) under variant expressions, disguises or illuminations.
+</p>
+<br />
+<h2 align='center'>Geometric Interpretation</h2>
+<p style="text-align:center"><img src="./papers/ICME17/geom.png" width="70%"></p>
 <p>&nbsp;</p>
 
-<h1 align='center'>Clustering Variant Face Images</h1>
-<table border="0" cellspacing="10" cellpadding="0">
-  <tr>
-    <td align="center" valign="middle">
-      <p> <img src="./papers/ICME17/result_clustering.png"></p></p>
-    </td>
-  </tr>
-</table>
+<h2 align='center'>Clustering Variant Face Images</h2>
+<p style="text-align:center"> <img src="./papers/ICME17/result_clustering.png" width="50%"></p>
 <p>&nbsp;</p>
 
-<h1 align='center'>Clustering Scalability</h1>
-<table border="0" cellspacing="10" cellpadding="0">
-  <tr>
-    <td align="center" valign="middle">
-    <p><img src="./papers/ICME17/result.png"></p>
-   </td>
-    </tr>
-</table>
+<h2 align='center'>Clustering Scalability</h2>
+<p style="text-align:center"><img src="./papers/ICME17/result.png" width="70%"></p>
 <p>&nbsp;</p>
 
 <h2>Citation</h2>
-<p>If you find this useful for your research, please use the following <a href="./papers/ICME17/essc.bib">Bibtex</a>
+<p>If you find this useful for your research, please use the following <a href="./papers/ICME17/essc.bib">Bibtex</a>.<br>
 @inproceedings{Ren2017essc,<br>
   &emsp;&emsp;title={A novel and robust face clustering method via adaptive difference dictionary},<br>
   &emsp;&emsp;author={Jiaxiang Ren and Shengjie Zhao and Kai Yang and Brian Nlong Zhao},<br>
